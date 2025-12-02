@@ -5,23 +5,57 @@
 }
 
 body {
-    font-family: sans-serif;
-    background-color: #080000;
-    color: #e0e0e0;
+    background: radial-gradient(
+            circle at top left,
+            #3b0a68 0%,
+            #280a45 30%,
+            #15051f 60%,
+            #050208 100%
+        );
+    background-attachment: fixed;
+    color: white;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
 }
 
 nav {
     display: flex;
-    background-color: black;
+    background-color: #0a0a0d;
     height: 80px;
     align-items: center;
     justify-content: space-between;
-    position: sticky;
-    top:0;
+    position: fixed;
+    top: 0;
     width: 100vw;
     padding: 0 8vw;
-    z-index: 100;
-    box-shadow:3px  #e9e9e7;
+    z-index: 2000;
+    box-shadow: 0 8px 40px rgba(150, 0, 255, 0.45);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    animation: navGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes navGlow {
+    0% { box-shadow: 0 6px 30px rgba(140, 0, 255, 0.35); }
+    100% { box-shadow: 0 10px 55px rgba(180, 0, 255, 0.65); }
+}
+
+.nav-items.explore.active img {
+    filter: drop-shadow(0 0 10px #b26bff);
+    transform: scale(1.18);
+}
+
+
+.nav-items.explore.active::after {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55px;
+    height: 6px;
+    background: linear-gradient(90deg, #8b33ff, #c96bff);
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(160, 80, 255, 0.9);
 }
 
 .logo_img {
@@ -86,9 +120,10 @@ nav {
     grid-template-columns: 280px 800px;
     gap: 40px;
     min-height: 100vh;
-    padding: 20px;
+    padding: 120px 40px 50px;
     margin: 0 auto;
     justify-content: center;
+
 }
 
 .sidebar {
@@ -118,12 +153,12 @@ nav {
 }
 
 .nav-item:hover {
-    background-color: #1f1f1f;
+    background-color: #0d0d0d;
     color: #fff;
 }
 
 .nav-item.active {
-    background-color: #1f1f1f;
+    background-color: #0d0d0d;
     color: #fff;
 }
 
@@ -182,11 +217,11 @@ nav {
 }
 
 .post-create {
-    background-color: #151515;
+    background-color: #090909;
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 20px;
-    border: 1px solid #2a2a2a;
+    border: 1px solid #151515;
 }
 
 .post-header {
@@ -266,7 +301,7 @@ nav {
 
 
 .post-card {
-    background-color: #151515;
+    background-color: #0d0d0d;;
     border-radius: 12px;
     padding: 20px;
     margin-bottom: 16px;
