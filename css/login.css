@@ -1,0 +1,199 @@
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at center, #0b0b0f 0%, #060607 60%, #050405 100%);
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.login_1 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.login_box {
+    position: relative;
+    width: 420px;
+    max-width: calc(100% - 48px);
+    padding: 44px 40px;
+    border-radius: 18px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.06);
+    backdrop-filter: blur(10px) saturate(120%);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.02),
+        0 8px 24px rgba(0,0,0,0.65); 
+    transform: translateY(0);
+    transition: transform .25s ease, box-shadow .25s ease;
+    overflow: hidden;
+}
+
+.login_box:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,0.02),
+        0 14px 40px rgba(0,0,0,0.72);
+}
+
+.login_box::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 18px;
+    pointer-events: none;
+    background: linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0.00));
+    mix-blend-mode: overlay;
+}
+
+.title {
+    background: linear-gradient(90deg, #c58bff 0%, #9f5bff 50%, #7c3aff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* ensures Safari shows it */
+    color: transparent;
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 1;
+    text-align: center;
+    margin: 0 0 12px 0;
+    letter-spacing: -0.5px;
+}
+
+.subtitle {
+    text-align: center;
+    opacity: 0.85;
+    margin: 0 0 26px 0;
+    font-size: 16px;
+    color: rgba(255,255,255,0.92);
+}
+
+.input_group {
+    margin-bottom: 18px;
+}
+
+.input_group label {
+    display: block;
+    font-size: 14px;
+    color: rgba(255,255,255,0.88);
+    margin-bottom: 8px;
+}
+
+.input_group input {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+    border: 1px solid rgba(255,255,255,0.06);
+    color: rgba(255,255,255,0.95);
+    font-size: 15px;
+    outline: none;
+    transition: border-color .18s ease, box-shadow .18s ease, background .18s ease;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.35) inset;
+}
+
+.input_group input::placeholder {
+    color: rgba(255,255,255,0.26);
+}
+
+.input_group input:focus {
+    border-color: rgba(165,109,255,0.95);
+    background: rgba(255,255,255,0.03);
+    box-shadow: 0 4px 18px rgba(86,46,170,0.08);
+}
+
+.options_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 22px 0;
+    font-size: 14px;
+}
+
+.options_row label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255,255,255,0.9);
+    cursor: pointer;
+}
+
+.options_row input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    appearance: none;
+    -webkit-appearance: none;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.options_row input[type="checkbox"]:checked {
+    background: linear-gradient(135deg,#a86bff,#7e38ff);
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 4px 10px rgba(128,64,255,0.12) inset;
+}
+
+/* Forgot link */
+.options_row .forgot {
+    color: rgba(181,122,255,0.95);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Primary button */
+.login_btn {
+    width: 100%;
+    padding: 14px 18px;
+    border-radius: 12px;
+    background: linear-gradient(90deg,#a24bff 0%, #8740ff 50%, #be6bff 100%);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform .16s ease, box-shadow .16s ease, opacity .16s ease;
+    box-shadow: 0 8px 20px rgba(140,64,255,0.14);
+}
+
+.login_btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 34px rgba(120,60,255,0.18);
+    opacity: 0.98;
+}
+.signup_text {
+    text-align: center;
+    margin-top: 18px;
+    opacity: 0.85;
+    font-size: 15px;
+}
+
+.signup_link {
+    color: rgba(197,125,255,0.98);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 520px) {
+    .login_box {
+        padding: 28px;
+        width: 100%;
+        border-radius: 14px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+}

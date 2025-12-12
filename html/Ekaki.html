@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Page - CultStory</title>
+
+    <link rel="stylesheet" href="/css/strangerthings.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!--navbar-->
+<nav class="nav">
+    <img src="../IMG_NAV/logo (1).png" class="logo">
+    <div class="right">
+        <a class="nav_item"><img src="../IMG_NAV/explore_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"></a>
+        <a class="nav_item"><img src="../IMG_NAV/event_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"></a>
+        <a class="nav_item"><img src="../IMG_NAV/groups_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"></a>
+        <a class="nav_item"><img src="../IMG_NAV/notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"></a>
+        <a class="nav_item"><img src="../IMG_NAV/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"></a>
+        <a class="profile"></a>
+    </div>
+</nav>
+
+<!-- main section -->
+<section class="main">
+    <img class="main-bg" src="https://img-cdn.publive.online/fit-in/1200x675/socialketchup/media/media_files/2025/10/27/ekaki-trailer-2025-10-27-16-29-20.jpg">
+
+    <div class="main_part "></div>
+
+    <div class="main_content">
+        <img class="poster" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtA95w-BFNHfPJ3i7lwmPE5bwja2zv6mRYpQ&s">
+
+        <div class="main_info">
+            <h1>Ekaki</h1>
+            <p class="sub">TV Series 2025</p>
+            <div class="main_buttons">
+                <button class="btn purple">Mark all Seasons Watched</button>
+                <button class="btn light">Add to Collection</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--page content-->
+<div class="page">
+
+    <!---overview--->
+    <h2>Overview</h2>
+    <p class="overview">
+        Ekaki follows a group of friends who head to Ekaki Villa for a fun weekend getaway, only to find themselves trapped in a nightmare. What begins as harmless exploration quickly spirals into eerie encounters, unsettling mysteries and supernatural chaos.
+    </p>
+
+    <div class="tags">
+        <span>Teen</span>
+        <span>Friendship</span>
+        <span>Mind-Bending</span>
+        <span>Monster</span>
+        <span>Drama</span>
+        <span>Humour</span>
+        <span>Horror</span>
+    </div>
+
+    <hr>
+
+ <!--episode-->
+<h2>Episode</h2>
+
+<div class="seasons-wrapper">
+    
+    <!-- left butten-->
+    <button class="scroll-btn left" onclick="scrollSeasons(-420)">&#10094;</button>
+
+    <!--Episode sliding-->
+    <div class="seasons-slider" id="seasonsSlider">
+
+        <!--ep1-->
+        <div class="season-big-card">
+            <img class="season-poster" src="https://m.media-amazon.com/images/M/MV5BOTA3ZjY5N2EtNDg4MC00ZTNhLWJkODUtZmYxZDRlNjI4NWI5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+            <div class="season-info">
+                <h3>Episode 1</h3>
+                <p class="reviews">2294 Reviews</p>
+                <div class="progress">
+                    <span class="bar green"></span>
+                    <span class="bar purple"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--ep2-->
+        <div class="season-big-card">
+            <img class="season-poster" src="https://m.media-amazon.com/images/M/MV5BOWVmMTQyOWItNDZlYi00OWQ2LWI0MGEtNWVmNWMzMGFkOThkXkEyXkFqcGc@._V1_.jpg">
+            <div class="season-info">
+                <h3>Episode 2</h3>
+                <p class="reviews">1971 Reviews</p>
+
+                <div class="progress">
+                    <span class="bar yellow"></span>
+                    <span class="bar purple"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--ep3-->
+        <div class="season-big-card">
+            <img class="season-poster" src="https://www.iwmbuzz.com/wp-content/uploads/2025/04/ashish-chanchlani-marks-his-web-series-debut-with-ekaki-reveals-intriguing-posters-5-736x920.jpeg">
+            <div class="season-info">
+                <h3>Episode 3</h3>
+                <p class="reviews">1883 Reviews</p>
+
+                <div class="progress">
+                    <span class="bar green"></span>
+                    <span class="bar purple"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--right button-->
+    <button class="scroll-btn right" onclick="scrollSeasons(420)">&#10095;</button>
+</div>
+
+<!--cast-->
+<h2>Cast</h2>
+
+<div class="slider-container">
+
+    <button class="arrow left" onclick="scrollLeft('castSlider')">&#10094;</button>
+
+    <div class="cast-slider" id="castSlider">
+
+        <div class="cast_card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGJJk773cHtah66xwXRRHw8julFKI_Cxkarw&s">
+            <h4>Ashish Chanchlani</h4>
+            <p>Kartik</p>
+        </div>
+
+        <div class="cast_card">
+            <img src="https://m.media-amazon.com/images/M/MV5BZTNkNGYwZjktMjAyOC00NDlhLTgxNjUtYWQ2MmQ3Zjc1M2IxXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+            <h4>Akash Dodeja</h4>
+            <p>Aryan</p>
+        </div>
+
+        <div class="cast_card">
+            <img src="https://thelogicalindian.com/wp-content/uploads/2024/11/500x300_218638-untitled-design-2022-06-16t152306771.jpg">
+            <h4>Harsh Rane</h4>
+            <p>Karan</p>
+        </div>
+
+        <div class="cast_card">
+            <img src="https://yt3.ggpht.com/K5a5jOgWiq3BI2rpgq6RVX1JTqfsLpI5XRpp_DPGib-NBPuX5Dkxpms_LvF5lYRjgychnajtCtX2=s1024-c-fcrop64=1,00000000ffffbfff-nd-v1">
+            <h4>Rohit Sadhwani</h4>
+            <p>DAkash (Jagu)</p>
+        </div>
+
+        <div class="cast_card">
+            <img src="https://img-cdn.publive.online/fit-in/1200x675/socialketchup/media/media_files/Ua4OAMH7PTSbDt9xYDQc.jpg">
+            <h4>Sidhanth Sarfare</h4>
+            <p>Tanni</p>
+        </div>
+            
+        <div class="cast_card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX7_J9mCPhj2vHAfzRmzE8jjRBwjQJg17m9A&s">
+                <h4>Shashank Shekhar</h4>
+                <p>Jashu</p>
+            </div>
+
+                </div>
+
+                <button class="arrow right" onclick="scrollRight('castSlider')">&#10095;</button>
+            </div>
+
+    <!--meter aabhi bhi bana hai-->
+        <h2>CultStory Meter</h2>
+
+        <div class="cultstory_meter">
+            <canvas id="cultstoryMeter"></canvas>
+
+            <div class="meter_center1">
+                <h1>80%</h1>
+                <p>8108 / 10120 Votes</p>
+            </div>
+        </div>
+
+        <div class="meter_box">
+            <span><span class="dot red"></span> Skip 5%</span>
+            <span><span class="dot yellow"></span> Timepass 40%</span>
+            <span><span class="dot green"></span> Go for it 52%</span>
+            <span><span class="dot purple"></span> Perfection 3%</span>
+        </div>
+
+    <!-- vibe chart-->
+    <div class="vibe-watch-row">
+    <div class="vibe_card">
+        <h2>Vibe Chart</h2>
+        <canvas id="vibePieChart"></canvas>
+
+        <div class="vibe_legend">
+            <p><span class="dot" style="background:#4fd1c5"></span> Mystery — 25%</p>
+            <p><span class="dot" style="background:#6b46c1"></span> Comedy — 25%</p>
+            <p><span class="dot" style="background:#2d3748"></span> Horror — 20%</p>
+            <p><span class="dot" style="background:#3182ce"></span> Thriller — 15%</p>
+            <p><span class="dot" style="background:#e53e3e"></span> Drama — 15%</p>
+        </div>
+    </div>
+
+    <!-- kaha pee deek naa hai -->
+    <div class="watch_card">
+        <h2>Watch Online</h2>
+
+        <div class="watch_item">
+            <img src="https://static.vecteezy.com/system/resources/previews/016/629/896/non_2x/youtube-logo-on-black-background-free-vector.jpg">
+            <div class="watch-info">
+                <h3>YouTube</h3>
+                <p>Free</p>
+            </div>
+            <span class="arrow">></span>
+        </div>
+    </div>
+
+</div>
+
+<!--reviews-->
+<h2>Reviews</h2>
+
+<div class="review_inputbox">
+    
+    <!-- Top Row -->
+    <div class="review2">
+        <div class="profile-circle">NT</div>
+        <span class="username">@amitabh_bachchan</span>
+
+        <div class="rating_options">
+            <button class="rateing-btn">Skip</button>
+            <button class="rateing-btn active">Timepass</button>
+            <button class="rateing-btn">Go for it</button>
+            <button class="rateing-btn">Perfection</button>
+        </div>
+    </div>
+
+    <textarea id="reviewText" maxlength="1000" placeholder="Write your review here..."></textarea>
+    <div class="review_footer">
+        <span id="charCount">0/1000</span>
+        <button class="post_btn" onclick="addReview()">Post</button>
+    </div>
+</div>
+
+<!-- Review Feed -->
+<div id="reviewsList" class="reviews-cont">
+</div>
+
+
+<!----javascript---->
+<script>
+const centerText = {
+    id: 'centerText',
+    afterDraw(chart) {
+        const { ctx, chartArea: { width, height } } = chart;
+
+        ctx.save();
+        ctx.fillStyle = "#ffffff";
+        ctx.textAlign = "center";
+
+        
+        ctx.font = "bold 20px Inter";
+        ctx.fillText("Mystery", width / 2, height / 2 - 10);
+
+        ctx.font = "bold 28px Inter";
+        ctx.fillText("25%", width / 2, height / 2 + 20);
+
+        ctx.restore();
+    }
+};
+
+//------vibePieChart--------
+const ctx = document.getElementById('vibePieChart').getContext('2d');
+new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ['Mystery', 'Comedy', 'Horror', 'Thriller', 'Drama'],
+        datasets: [{
+            data: [25, 25, 20, 15, 15],
+            backgroundColor: [
+                '#4fd1c5',
+                '#6b46c1',
+                '#2d3748',
+                '#3182ce',
+                '#e53e3e'
+            ],
+            borderWidth: 0,
+            cutout: '70%'
+        }]
+    },
+    options: {
+        plugins: {
+            legend: { display: false },
+            tooltip: { enabled: true }
+        }
+    },
+    plugins: [centerText]
+});
+//------Semi-circle-------
+const gaugeCtx = document.getElementById('cultstoryMeter').getContext('2d');
+
+new Chart(gaugeCtx, {
+    type: 'doughnut',
+    data: {
+        labels: ["Skip", "Timepass", "Go for it", "Perfection"],
+        datasets: [{
+            data: [5, 40, 52, 3],  
+            backgroundColor: [
+                "#ff4f67",  
+                "#ffe66b",  
+                "#55ff90",  
+                "#c26bff"   
+            ],
+            borderWidth: 0,
+            cutout: "70%",
+            circumference: 180, 
+            rotation: 270       
+        }]
+    },
+    options: {
+        plugins: { legend: { display: false } },
+        responsive: true,
+        maintainAspectRatio: false
+    }
+});
+
+let currentRating = "Timepass";
+
+//------rateing section------
+document.querySelectorAll(".rateing-btn").forEach(btn => {
+    btn.onclick = function () {
+        document.querySelectorAll(".rateing-btn").forEach(b => b.classList.remove("active"));
+        this.classList.add("active");
+        currentRating = this.innerText;
+    };
+});
+
+//-----Review--------
+function addReview() {
+    const text = document.getElementById("reviewText").value.trim();
+    if (text === "") return alert("Write something!");
+
+    const tagClass = {
+        "Skip": "skip",
+        "Timepass": "timepass",
+        "Go for it": "go",
+        "Perfection": "perfect"
+    }[currentRating];
+
+    const date = new Date().toLocaleDateString("en-US", {
+        day: "numeric",
+        month: "short"
+    });
+
+    const card = document.createElement("div");
+    card.classList.add("review_card-full");
+
+    card.innerHTML = `
+        <div class="review_header">
+            <div class="review_user">
+                <img src="https://i.pravatar.cc/100?img=3">
+                <div class="review_user_info">
+                    <h4>@nikhil_telkar</h4>
+                    <span>${date}</span>
+                </div>
+            </div>
+            <span class="review_tag ${tagClass}">${currentRating}</span>
+        </div>
+
+        <p class="review_text">${text}</p>
+
+        <div class="review_1">
+            <span class="like-btn" onclick="likeReview(this)">
+                ❤️ <span class="like-count">0</span>
+            </span>
+            <span class="comment-btn">💬 0</span>
+            <span onclick="deleteReview(this)" class="more-btn">⋯</span>
+        </div>
+    `;
+
+    document.getElementById("reviewsList").prepend(card);
+    document.getElementById("reviewText").value = "";
+}
+
+//-------like--------
+function likeReview(el) {
+    let countSpan = el.querySelector(".like-count");
+    let count = parseInt(countSpan.innerText);
+    countSpan.innerText = count + 1;
+}
+
+//------Delete----------
+function deleteReview(el) {
+    el.closest(".review_card-full").remove();
+}
+</script>
+</body>
+</html>
