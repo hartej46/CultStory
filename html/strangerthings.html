@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Page-CultStory</title>
+
+    <link rel="stylesheet" href="/css/strangerthings.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!--navbar-->
+<nav class="nav">
+    <img src="../IMG_NAV/logo (1).png" class="logo">
+    <div class="right">
+        <a class="nav_item"><img src="../IMG_NAV/explore_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"></a>
+        <a class="nav_item"><img src="../IMG_NAV/event_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"></a>
+        <a class="nav_item"><img src="../IMG_NAV/groups_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"></a>
+        <a class="nav_item"><img src="../IMG_NAV/notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"></a>
+        <a class="nav_item"><img src="../IMG_NAV/search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg"></a>
+        <a class="profile"></a>
+    </div>
+</nav>
+
+<!-- main section -->
+<section class="main">
+    <img class="main-bg" src="https://wallpapers.com/images/featured/stranger-things-dkttxahzpl44tbsa.jpg">
+
+    <div class="main_part "></div>
+
+    <div class="main_content">
+        <img class="poster" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQaZ3jDdik4aF0G_eU607vjeBsMzReqr8E8riWMU87ZocGDsfPq">
+
+        <div class="main_info">
+            <h1>Stranger Things</h1>
+            <p class="sub">Show • 2016 • 1h • 5 Seasons</p>
+
+            <div class="main_buttons">
+                <button class="btn purple">Mark all Seasons Watched</button>
+                <button class="btn light">Add to Collection</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--page content-->
+<div class="page">
+
+    <!---overview--->
+    <h2>Overview</h2>
+    <p class="overview">
+        In the 1980s, the quiet town of Hawkins, Indiana, is forever changed when a young boy called Will Byers mysteriously vanishes. As his friends search for him, they stumble upon Eleven, a girl with extraordinary powers and a haunting connection to unknown secrets that defy reality.
+    </p>
+
+    <div class="tags">
+        <span>Teen</span>
+        <span>Friendship</span>
+        <span>Mind-Bending</span>
+        <span>Monster</span>
+        <span>Drama</span>
+        <span>Humour</span>
+        <span>Horror</span>
+    </div>
+
+    <hr>
+
+ <!--season-->
+<h2>Seasons</h2>
+
+<div class="seasons-wrapper">
+    
+    <!-- left butten-->
+    <button class="scroll-btn left" onclick="scrollSeasons(-420)">&#10094;</button>
+
+    <!--season sliding-->
+    <div class="seasons-slider" id="seasonsSlider">
+
+        <!--Season 1-->
+        <div class="season-big-card">
+            <img class="season-poster" src="https://posterwa.com/cdn/shop/products/STR4.jpg?v=1659647172">
+            <div class="season-info">
+                <h3>Season 1</h3>
+                <p class="season-meta">2016 • 8 Episodes</p>
+                <p class="reviews">2324 Reviews</p>
+
+                <div class="progress">
+                    <span class="bar green"></span>
+                    <span class="bar purple"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--Season 2-->
+        <div class="season-big-card">
+            <img class="season-poster" src="https://i0.wp.com/bloody-disgusting.com/wp-content/uploads/2017/09/stranger-things-season-2-poster.jpg">
+            <div class="season-info">
+                <h3>Stranger Things 2</h3>
+                <p class="season-meta">2017 • 9 Episodes</p>
+                <p class="reviews">1971 Reviews</p>
+
+                <div class="progress">
+                    <span class="bar yellow"></span>
+                    <span class="bar purple"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--Season 3-->
+        <div class="season-big-card">
+            <img class="season-poster" src="https://i.pinimg.com/736x/63/7b/80/637b808e1260e50ee46067d67995f615.jpg">
+            <div class="season-info">
+                <h3>Stranger Things 3</h3>
+                <p class="season-meta">2019 • 8 Episodes</p>
+                <p class="reviews">1883 Reviews</p>
+
+                <div class="progress">
+                    <span class="bar green"></span>
+                    <span class="bar purple"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--Season 4-->
+        <div class="season-big-card">
+            <img class="season-poster" src="https://m.media-amazon.com/images/I/81PrM6OSfBL._AC_UF894,1000_QL80_.jpg">
+            <div class="season-info">
+                <h3>Stranger Things 4</h3>
+                <p class="season-meta">2022 • 9 Episodes</p>
+                <p class="reviews">2109 Reviews</p>
+
+                <div class="progress">
+                    <span class="bar green"></span>
+                    <span class="bar purple"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--Season 5-->
+        <div class="season-big-card">
+            <img class="season-poster" src="https://enkq8rj78bi.exactdn.com/wp-content/uploads/2025/07/image-10-80.jpg?strip=all&lossy=1&ssl=1">
+            <div class="season-info">
+                <h3>Season 5 (volume 1)</h3>
+                <p class="season-meta">2025 • 4 Episodes</p>
+                <p class="reviews">—</p>
+
+                <div class="progress">
+                    <span class="bar yellow"></span>
+                    <span class="bar purple"></span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--right button-->
+    <button class="scroll-btn right" onclick="scrollSeasons(420)">&#10095;</button>
+</div>
+
+<!--cast-->
+<h2>Cast</h2>
+
+<div class="slider-container">
+
+    <button class="arrow left" onclick="scrollLeft('castSlider')">&#10094;</button>
+
+    <div class="cast-slider" id="castSlider">
+
+        <div class="cast_card">
+            <img src="https://www.hollywoodreporter.com/wp-content/uploads/2025/02/GettyImages-2052040266-H-2025.jpg?w=1296&h=730&crop=1">
+            <h4>Millie Bobby Brown</h4>
+            <p>Eleven</p>
+        </div>
+
+        <div class="cast_card">
+            <img src="https://houseofspells.co.uk/cdn/shop/articles/Finn_Wolfhard_Esquire_Germany.jpg?v=1705567678">
+            <h4>Finn Wolfhard</h4>
+            <p>Mike</p>
+        </div>
+
+        <div class="cast_card">
+            <img src="https://www.rollingstone.com/wp-content/uploads/2023/01/noah-schnapp-comes-out.jpg?w=1581&h=1054&crop=1">
+            <h4>Noah Schnapp</h4>
+            <p>Will</p>
+        </div>
+
+        <div class="cast_card">
+            <img src="https://www.docseducation.com/sites/default/files/inline-images/shutterstock_574952236.jpg">
+            <h4>Gaten Matarazzo</h4>
+            <p>Dustin</p>
+        </div>
+
+        <div class="cast_card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvCJ6TJAdI7KtKbZV5rPaS2yXO1LfjogCUcQ&s">
+            <h4>Caleb McLaughlin</h4>
+            <p>Lucas</p>
+        </div>
+            
+        <div class="cast_card">
+                <img src="https://assets.teenvogue.com/photos/62c6d8cd712bea293482c48d/3:2/w_3155,h_2103,c_limit/1326033930">
+                <h4>Sadie Sink</h4>
+                <p>Max Mayfield</p>
+            </div>
+
+            <div class="cast_card">
+                <img src="https://i.redd.it/uc09ie7jtxb91.jpg">
+                <h4>Winona Ryder</h4>
+                <p>Joyce Byers</p>
+            </div>
+
+            <div class="cast_card">
+                <img src="https://www.koimoi.com/wp-content/new-galleries/2020/02/david-harbour-to-be-back-in-stranger-things-season-4-0013.jpg">
+                <h4>David Harbour</h4>
+                <p>Jim Hopper</p>
+            </div>
+
+            <div class="cast_card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Natalia_Dyer_in_2017.jpg">
+                <h4>Natalia Dyer</h4>
+                <p>Nancy Wheeler</p>
+            </div>
+
+            <div class="cast_card">
+                <img src="https://s.yimg.com/ny/api/res/1.2/Hzti08NmcG9xzRDpj86GCA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTEyNDI7aD02OTk7Y2Y9d2VicA--/https://media.zenfs.com/en/parade_250/66e4efb2547ff5a3f16e2cb4979a60ca">
+                <h4>Charlie Heaton</h4>
+                <p>Jonathan Byers</p>
+            </div>
+
+            <div class="cast_card">
+                <img src="https://assets.teenvogue.com/photos/5a57df285653563ec43e77d2/16:9/w_2560%2Cc_limit/GettyImages-881765338.jpg">
+                <h4>Joe Keery</h4>
+                <p>Steve Harrington</p>
+            </div>
+
+            <div class="cast_card">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/stranger-things-maya-hawke-2-1620300243.jpeg?crop=0.6633333333333333xw:1xh;center,top&resize=1200:*">
+                <h4>Maya Hawke</h4>
+                <p>Robin Buckley</p>
+            </div>
+
+            <div class="cast_card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMGQ5OGFjYmYtZGU3NS00MGM3LTg5NjEtYWNmODJkNWY3YTQ5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg">
+                <h4>Priah Ferguson</h4>
+                <p>Erica Sinclair</p>
+            </div>
+
+            <div class="cast_card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Screenshot_-_Joe_Chrest_speaking_at_Stranger_Things_4_New_York_Premiere.jpg/250px-Screenshot_-_Joe_Chrest_speaking_at_Stranger_Things_4_New_York_Premiere.jpg">
+                <h4>Joe Chrest</h4>
+                <p>Ted Wheeler</p>
+            </div>
+
+            <div class="cast_card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSotQdRD1VpV89ICoi4lSCNUjkzK4PQ9nhHpw&s">
+                <h4>Cara Buono</h4>
+                <p>Karen Wheeler</p>
+            </div>
+
+            <div class="cast_card">
+                <img src="https://www.hollywoodreporter.com/wp-content/uploads/2016/11/brett_gelman_-_getty_-_h_-_2016.jpg">
+                <h4>Brett Gelman</h4>
+                <p>Murray Bauman</p>
+            </div>
+
+            <div class="cast_card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9C8rsHqW7OKPQiOFXlljZjzu-QIzmQ7WU2Q&s">
+                <h4>Paul Reiser</h4>
+                <p>Dr. Owens</p>
+            </div>
+
+            <div class="cast_card">
+                <img src="https://decider.com/wp-content/uploads/2019/06/stranger-things-dr-brenner.jpg?quality=75&strip=all&w=1200s">
+                <h4>Matthew Modine</h4>
+                <p>Dr. Brenner</p>
+            </div>
+
+            <div class="cast_card">
+                <img src="https://m.media-amazon.com/images/M/MV5BMTcxNzQyNTkyOV5BMl5BanBnXkFtZTgwMTcwMTEyMDE@._V1_.jpg">
+                <h4>Amy Seimetz</h4>
+                <p>Becky Ives</p>
+            </div>
+
+            <div class="cast_card">
+                <img src="https://miro.medium.com/1*Mgm1hZuxoctTuQcQZ1r3GA.png">
+                <h4>Dacre Montgomery</h4>
+                <p>Billy Hargrove</p>
+            </div>
+
+            <div class="cast_card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN4Jvh0kaRRlHdN8mvFubg57H5m58ZXHIEiA&s">
+                <h4>Sean Astin</h4>
+                <p>Bob Newby</p>
+            </div>
+
+            <div class="cast_card">
+                <img src="https://images.immediate.co.uk/production/volatile/sites/3/2025/11/DSC04213HH8DDBV-e8324ab-e1764253666887.jpg?quality=90&fit=700,468">
+                <h4>Linnea Berthelsen</h4>
+                <p>Kali (008)</p>
+            </div>
+
+            <div class="cast_card">
+                <img src="https://image.tmdb.org/t/p/w500/isCdDBAxrSOjugK3HjgESi6rXcn.jpg">
+                <h4>Charlie Tahan</h4>
+                <p>Troy</p>
+            </div>
+
+            <div class="cast_card">
+                <img src="https://cdn.shopify.com/s/files/1/0275/9209/7837/files/WEB-HS-Randy_Havens-1080x1080.jpg?v=1754843517">
+                <h4>Randall P. Havens</h4>
+                <p>Mr. Clarke</p>
+            </div>
+
+                </div>
+
+                <button class="arrow right" onclick="scrollRight('castSlider')">&#10095;</button>
+            </div>
+
+
+
+<!--crew-->
+<h2>Crew</h2>
+
+<div class="slider-container">
+
+    <button class="arrow left" onclick="scrollLeft('crewSlider')">&#10094;</button>
+
+    <div class="cast-slider" id="crewSlider">
+
+        <div class="cast_card">
+            <img src="https://www.masterclass.com/course-images/attachments/q6xmo5f78m23z98x6eazeyywgh3d">
+            <h4>Duffer Brothers</h4>
+            <p>Showrunners</p>
+        </div>
+
+        <div class="cast_card">
+            <img src="https://www.hollywoodreporter.com/wp-content/uploads/2023/11/Shawn-Levy-getty-H-2023.jpg?w=1296&h=730&crop=1">
+            <h4>Shawn Levy</h4>
+            <p>Producer</p>
+        </div>
+
+    </div>
+
+    <button class="arrow right" onclick="scrollRight('crewSlider')">&#10095;</button>
+</div>
+
+    <!--meter aabhi bhi bana hai-->
+<h2>CultStory Meter</h2>
+
+<div class="cultstory_meter">
+    <canvas id="cultstoryMeter"></canvas>
+
+    <div class="meter_center1">
+        <h1>80%</h1>
+        <p>8108 / 10120 Votes</p>
+    </div>
+</div>
+
+<div class="meter_box">
+    <span><span class="dot red"></span> Skip 0%</span>
+    <span><span class="dot yellow"></span> Timepass 1%</span>
+    <span><span class="dot green"></span> Go for it 19%</span>
+    <span><span class="dot purple"></span> Perfection 80%</span>
+</div>
+    <!-- VIBE CHART -->
+<div class="vibe-watch-row">
+
+    <!-- VIBE CHART -->
+    <div class="vibe_card">
+        <h2>Vibe Chart</h2>
+        <canvas id="vibePieChart"></canvas>
+
+        <div class="vibe_legend">
+            <p><span class="dot" style="background:#4fd1c5"></span> Sci-Fi — 30%</p>
+            <p><span class="dot" style="background:#6b46c1"></span> Mystery — 30%</p>
+            <p><span class="dot" style="background:#2d3748"></span> Horror — 20%</p>
+            <p><span class="dot" style="background:#3182ce"></span> Thriller — 10%</p>
+            <p><span class="dot" style="background:#e53e3e"></span> Romance — 10%</p>
+        </div>
+    </div>
+
+    <!-- WATCH ONLINE -->
+    <div class="watch_card">
+        <h2>Watch Online</h2>
+
+        <div class="watch_item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg">
+            <div class="watch-info">
+                <h3>Netflix</h3>
+                <p>Subscription</p>
+            </div>
+            <span class="arrow">></span>
+        </div>
+    </div>
+
+</div>
+
+<!--reviews-->
+<h2>Reviews</h2>
+
+<div class="review_inputbox">
+    
+<!-- Top Row -->
+    <div class="review2">
+        <div class="profile-circle">pp</div>
+        <span class="username">@priya_paglu</span>
+
+        <div class="rating_options">
+            <button class="rateing-btn">Skip</button>
+            <button class="rateing-btn active">Timepass</button>
+            <button class="rateing-btn">Go for it</button>
+            <button class="rateing-btn">Perfection</button>
+        </div>
+    </div>
+
+    <textarea id="reviewText" maxlength="1000" placeholder="Write your review here..."></textarea>
+    <div class="review_footer">
+        <span id="charCount">0/1000</span>
+        <button class="post_btn" onclick="addReview()">Post</button>
+    </div>
+</div>
+
+<!-- Review Feed -->
+<div id="reviewsList" class="reviews-cont">
+</div>
+<!----javascript---->
+<script>
+const centerText = {
+    id: 'centerText',
+    afterDraw(chart) {
+        const { ctx, chartArea: { width, height } } = chart;
+
+        ctx.save();
+        ctx.fillStyle = "#ffffff";
+        ctx.textAlign = "center";
+
+        
+        ctx.font = "bold 20px Inter";
+        ctx.fillText("Sci-Fi", width / 2, height / 2 - 10);
+
+        ctx.font = "bold 28px Inter";
+        ctx.fillText("30%", width / 2, height / 2 + 20);
+
+        ctx.restore();
+    }
+};
+//-------vibe pie chart---------
+const ctx = document.getElementById('vibePieChart').getContext('2d');
+new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+        labels: ['Sci-Fi', 'Mystery', 'Horror', 'Thriller', 'Romance'],
+        datasets: [{
+            data: [30, 30, 20, 10, 10],
+            backgroundColor: [
+                '#4fd1c5',
+                '#6b46c1',
+                '#2d3748',
+                '#3182ce',
+                '#e53e3e'
+            ],
+            borderWidth: 0,
+            cutout: '70%'
+        }]
+    },
+    options: {
+        plugins: {
+            legend: { display: false },
+            tooltip: { enabled: true }
+        }
+    },
+    plugins: [centerText]
+});
+
+//------Semi-Circle-----
+const gaugeCtx = document.getElementById('cultstoryMeter').getContext('2d');
+
+new Chart(gaugeCtx, {
+    type: 'doughnut',
+    data: {
+        labels: ["Skip", "Timepass", "Go for it", "Perfection"],
+        datasets: [{
+            data: [0, 1, 19, 80],  
+            backgroundColor: [
+                "#ff4f67",  
+                "#ffe66b",  
+                "#55ff90",  
+                "#c26bff"   
+            ],
+            borderWidth: 0,
+            cutout: "70%",
+            circumference: 180, 
+            rotation: 270       
+        }]
+    },
+    options: {
+        plugins: { legend: { display: false } },
+        responsive: true,
+        maintainAspectRatio: false
+    }
+});
+
+let currentRating = "Timepass";
+
+//------rateing-------
+document.querySelectorAll(".rateing-btn").forEach(btn => {
+    btn.onclick = function () {
+        document.querySelectorAll(".rateing-btn").forEach(b => b.classList.remove("active"));
+        this.classList.add("active");
+        currentRating = this.innerText;
+    };
+});
+
+//----Review add karna--------
+function addReview() {
+    const text = document.getElementById("reviewText").value.trim();
+    if (text === "") return alert("Write something!");
+
+    const tagClass = {
+        "Skip": "skip",
+        "Timepass": "timepass",
+        "Go for it": "go",
+        "Perfection": "perfect"
+    }[currentRating];
+
+    const date = new Date().toLocaleDateString("en-US", {
+        day: "numeric",
+        month: "short"
+    });
+
+    const card = document.createElement("div");
+    card.classList.add("review_card-full");
+
+    card.innerHTML = `
+        <div class="review_header">
+            <div class="review_user">
+                <img src="https://i.pravatar.cc/100?img=3">
+                <div class="review_user_info">
+                    <h4>@priya_paglu</h4>
+                    <span>${date}</span>
+                </div>
+            </div>
+            <span class="review_tag ${tagClass}">${currentRating}</span>
+        </div>
+
+        <p class="review_text">${text}</p>
+
+        <div class="review_1">
+            <span class="like-btn" onclick="likeReview(this)">
+                ❤️ <span class="like-count">0</span>
+            </span>
+            <span class="comment-btn">💬 0</span>
+            <span onclick="deleteReview(this)" class="more-btn">⋯</span>
+        </div>
+    `;
+
+    document.getElementById("reviewsList").prepend(card);
+    document.getElementById("reviewText").value = "";
+}
+
+//-----like------
+function likeReview(el) {
+    let countSpan = el.querySelector(".like-count");
+    let count = parseInt(countSpan.innerText);
+    countSpan.innerText = count + 1;
+}
+
+//----Delete----
+function deleteReview(el) {
+    el.closest(".review_card-full").remove();
+}
+</script>
+
+</body>
+</html>
