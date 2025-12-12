@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(
+            circle at top left,
+            #3b0a68 0%,
+            #280a45 30%,
+            #15051f 60%,
+            #050208 100%
+        );
+    background-attachment: fixed;
+    color: white;
+    overflow-x: hidden;
+    font-family: "Inter", sans-serif;
+}
+
+nav {
+    display: flex;
+    background-color: #0a0a0d;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 0 8vw;
+    z-index: 2000;
+    box-shadow: 0 8px 40px rgba(150, 0, 255, 0.45);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    animation: navGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes navGlow {
+    0% { box-shadow: 0 6px 30px rgba(140, 0, 255, 0.35); }
+    100% { box-shadow: 0 10px 55px rgba(180, 0, 255, 0.65); }
+}
+
+.nav-items.explore.active img {
+    filter: drop-shadow(0 0 10px #b26bff);
+    transform: scale(1.18);
+}
+
+
+.nav-items.explore.active::after {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55px;
+    height: 6px;
+    background: linear-gradient(90deg, #8b33ff, #c96bff);
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(160, 80, 255, 0.9);
+}
+
+
+
+.logo_img {
+    height: 50px;
+}
+
+.right_column {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+  
+}
+
+.right_column a {
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+#current3,
+.right_column .club {
+    opacity: 1;
+    gap: 6px;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+
+.right_column a {
+    display: inline-flex;   
+    transform: scale(1);      
+    transition: transform .3s ease;
+}
+
+.right_column a:hover {
+    transform: scale(1.15);
+}
+
+.profile {
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.club {
+    text-decoration: none;
+   height: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 280px 800px;
+    gap: 40px;
+    min-height: 100vh;
+    padding: 120px 40px 50px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.sidebar {
+    background-color: transparent;
+    padding: 0;
+    height: fit-content;
+    position: sticky;
+    top: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: #b0b0b0;
+}
+
+.nav-item:hover {
+    background-color:#0d0d0d;
+    color: #fff;
+}
+
+.active {
+    background-color: #0d0d0d;
+    color: #fff;
+}
+
+.nav-icon {
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.section-title {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #666;
+    margin: 24px 0 12px 16px;
+    letter-spacing: 0.5px;
+}
+
+.club-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    margin-bottom: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.club-item:hover {
+    background-color:#0d0d0d;
+}
+
+.club-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.club-icon img {
+    height: 40px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #e9e9e7;
+}
+
+
+        .main-content {
+            width: 100%;
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            color: #888;
+            font-size: 16px;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        .card-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .card-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .card-description {
+            color: #aaa;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 16px;
+        }
+
+        .card-button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .btn-join {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .btn-join:hover {
+            background-color: #e0e0e0;
+        }
+
+        .btn-joined {
+            background-color: #2a2a2a;
+            color: #888;
+            cursor: default;
+        }
+
+        .btn-joined::before {
+            content: "✓ ";
+        }
+
+        
+        @media (max-width: 1200px) {
+            .cards-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
