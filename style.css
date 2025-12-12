@@ -1,0 +1,290 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* padding-top: 80px; */
+}
+body{
+    margin-top: 47px;
+}
+nav {
+    display: flex;
+    background-color: #0a0a0d;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    padding: 0 8vw;
+    z-index: 2000;
+    box-shadow: 0 8px 30px rgba(150, 0, 255, 0.45);
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    animation: navGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes navGlow {
+    0% { box-shadow: 0 6px 30px rgba(140, 0, 255, 0.35); }
+    100% { box-shadow: 0 10px 55px rgba(180, 0, 255, 0.65); }
+}
+
+.nav-items.explore.active img {
+    filter: drop-shadow(0 0 10px #b26bff);
+    transform: scale(1.18);
+}
+
+
+.nav-items.explore.active::after {
+    content: "";
+    position: absolute;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 55px;
+    height: 6px;
+    background: linear-gradient(90deg, #8b33ff, #c96bff);
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(160, 80, 255, 0.9);
+}
+
+
+
+.logo_img {
+    height: 50px;
+}
+
+.right_column {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+  
+}
+
+.right_column a {
+    opacity: 0.6;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+}
+
+#current3,
+.right_column .club {
+    opacity: 1;
+    gap: 6px;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+
+.right_column a {
+    display: inline-flex;   
+    transform: scale(1);      
+    transition: transform .3s ease;
+}
+
+.right_column a:hover {
+    transform: scale(1.15);
+}
+
+.profile {
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+
+}
+
+
+body {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #1e222f 0, #050506 45%, #000 100%);
+    color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.page {
+    margin-left: 120px;
+    padding: 40px 32px 40px 40px;
+}
+
+
+.sidebar {
+    position: fixed;
+    inset-block: 24px;
+    left: 24px;
+    top: 100px;
+    width: 80px;
+    background: linear-gradient(180deg, #181925, #0b0c10);
+    border-radius: 24px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 12px;
+    height: 80%;
+}
+
+.sidebar-title {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 2rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #8b8e9c;
+}
+
+
+.month-block {
+    margin-bottom: 34px;
+}
+
+.month-title {
+    font-size: 1.8rem;
+    margin-bottom: 18px;
+    font-weight: 700;
+}
+
+
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+    gap: 20px;
+}
+
+
+.movie-card {
+    position: relative;
+    background: #14151c;
+    border-radius: 18px;
+    padding: 10px 10px 12px;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.65);
+    overflow: hidden;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease-out,
+        box-shadow 0.2s ease-out,
+        background 0.2s ease-out;
+}
+
+.movie-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.06),
+        transparent 35%,
+        rgba(0, 0, 0, 0.78) 100%
+    );
+    opacity: 0;
+    transition: opacity 0.2s ease-out;
+    pointer-events: none;
+}
+
+.movie-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.9);
+    background: #181924;
+}
+
+.movie-card:hover::before {
+    opacity: 1;
+}
+
+
+.movie-card img {
+    width: 100%;
+    height: 260px;
+    border-radius: 14px;
+    object-fit: cover;
+    display: block;
+}
+
+
+.movie-card h5 {
+    margin-top: 10px;
+    font-size: 0.98rem;
+    font-weight: 600;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-meta {
+    margin-top: 4px;
+    font-size: 0.78rem;
+    color: #8b8e9c;
+    text-align: left;
+}
+
+
+.movie-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 9px 4px 7px;
+    border-radius: 999px;
+    background: radial-gradient(circle at top left, #ff7a4b, #ff3a2f);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 600;
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.8);
+}
+
+.badge-icon {
+    font-size: 0.8rem;
+}
+
+.badge-count {
+    line-height: 1;
+}
+
+
+@media (max-width: 900px) {
+    .page {
+        margin-left: 90px;
+        padding-inline: 20px;
+    }
+
+    .sidebar {
+        width: 70px;
+    }
+
+    .movies-grid {
+        gap: 14px;
+    }
+}
+
+@media (max-width: 640px) {
+    .sidebar {
+        position: static;
+        flex-direction: row;
+        width: auto;
+        height: auto;
+        margin: 12px 16px 0;
+        padding: 12px 16px;
+    }
+
+    .sidebar-title {
+        writing-mode: horizontal-tb;
+        transform: none;
+    }
+
+    .page {
+        margin-left: 0;
+        padding: 16px;
+    }
+
+    .month-title {
+        font-size: 1.4rem;
+    }
+}
