@@ -3,56 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Girlfriend</title>
+    <title>The Girlfriend - CultStory</title>
     <link rel="stylesheet" href="kkp.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <nav>
-        <img class="logo_img" src="logo (1).png">
 
+<!-- NAVBAR -->
+<nav class="nav">
+    <img src="logo (1).png" class="logo" alt="CultStory logo">
+    <div class="right">
+        <a href="index.html" class="nav_item"><img src="explore_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+        <a href="cultStory.html" class="nav_item"><img src="event_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+        <a href="clubs_home.html" class="nav_item"><img src="groups_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+        <a class="nav_item"><img src="notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+        <a class="nav_item"><img src="search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+        <a href="login.html" class="profile"></a>
+    </div>
+</nav>
 
-        <div class="right_column">
+<!-- HERO / MAIN -->
+<section class="main">
+    <img class="main-bg" src="https://assets-in.bmscdn.com/discovery-catalog/events/et00423419-htasggzkkn-landscape.jpg" alt="The Girlfriend background">
 
+    <div class="main_part"></div>
 
-            <a href="index.html" class="nav-items">
-                <img src="explore_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg">
-            </a>
+    <div class="main_content">
+        <img class="poster" src="img/The-Girlfriend_Poster-05bb43c0-b97b-11f0-afc6-dda5a2a769ff.jpg" alt="The Girlfriend poster">
 
-
-            <a href="cultStory.html" class="nav-items">
-                <img src="event_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg">
-            </a>
-
-
-            <a href="clubs_home.html" class="nav-items explore active">
-                <img src="groups_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg">
-            </a>
-
-
-            <a href="#" class="nav-items ">
-                <img src="notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg">
-            </a>
-
-
-            <a href="#" class="nav-items">
-                <img src="search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg">
-            </a>
-
-
-            <a href="login.html" class="nav-items profile"></a>
-
-
-        </div>
-    </nav>
-    <section class="hero">
-    <div class="hero-left">
-        
-
-
-        <div class="movie-info">
+        <div class="main_info">
             <h1>The Girlfriend</h1>
-            <p class="meta">Movie • 2025 • 2h 18m</p>
+            <p class="sub">Movie • 2025 • 2h 18m</p>
 
+            <div class="main_buttons">
+                <button class="btn purple">Mark as Watched</button>
+                <button class="btn light">Add to Collection</button>
+            </div>
 
             <div class="meta-grid">
                 <div><strong>Directed By:</strong> Rahul Ravindran</div>
@@ -77,10 +63,12 @@
     </div>
 </section>
 
+<!-- PAGE CONTENT -->
+<div class="page">
 
-<section class="overview">
+    <!-- OVERVIEW -->
     <h2>Overview</h2>
-    <p>
+    <p class="overview">
         The Girlfriend follows a young woman navigating the highs and lows of love and
         self-discovery during her college years, as she learns about compatibility, emotional
         maturity, and the complexities of modern relationships.
@@ -92,73 +80,60 @@
         <span>Romance</span>
         <span>Empowering</span>
     </div>
-</section>
 
-
-<hr class="divider">
-
-
-<section class="cast-section">
+    <!-- CAST -->
     <h2>Cast</h2>
-
-
-    <div class="cast-list">
-    <div class="cast-item">
-        <p>Rashmika Mandanna<br><small>The Girlfriend</small></p>
+    <div class="slider-container">
+        <div class="cast-slider" id="castSlider">
+            <div class="cast_card">
+                <h4>Rashmika Mandanna</h4>
+                <p>The Girlfriend</p>
+            </div>
+            <div class="cast_card">
+                <h4>Rao Ramesh</h4>
+                <p>Actor</p>
+            </div>
+            <div class="cast_card">
+                <h4>Rohini</h4>
+                <p>Actor</p>
+            </div>
+            <div class="cast_card">
+                <h4>Dheekshith Shetty</h4>
+                <p>Vikram</p>
+            </div>
+        </div>
     </div>
 
-
-    <div class="cast-item">
-        <p>Rao Ramesh<br><small>Actor</small></p>
+    <!-- CREW -->
+    <h2>Crew</h2>
+    <div class="slider-container">
+        <div class="cast-slider">
+            <div class="cast_card">
+                <h4>Rahul Ravindran</h4>
+                <p>Writer, Director</p>
+            </div>
+        </div>
     </div>
 
+    <hr>
 
-    <div class="cast-item">
-        <p>Rohini<br><small>Actor</small></p>
+    <!-- CULTSTORY METER -->
+    <h2>CultStory Meter</h2>
+    <div class="cultstory_meter">
+        <canvas id="cultstoryMeter"></canvas>
+        <div class="meter_center1">
+            <h1>63%</h1>
+            <p>36/57 Votes</p>
+        </div>
     </div>
 
-
-    <div class="cast-item">
-        <p>Dheekshith Shetty<br><small>Vikram</small></p>
+    <div class="meter_box">
+        <span><span class="dot pink"></span> Drama 45%</span>
+        <span><span class="dot yellow"></span> Romance 40%</span>
+        <span><span class="dot green"></span> Mystery 15%</span>
+        <span><span class="dot purple"></span> </span>
     </div>
 </div>
-
-
-</section>
-
-
-<section class="crew-section">
-    <h2>Crew</h2>
-
-
-    <div class="cast-list">
-        <div class="cast-card"><p>Rahul Ravindran<br><small>Writer, Director</small></p></div>
-    </div>
-</section>
-
-
-<hr class="divider">
-
-
-<section class="meter-section">
-    <h2>Cult Meter</h2>
-
-
-    <div class="meter-visual">
-        
-        <h1>63%</h1>
-        <p>36/57 Votes</p>
-    </div>
-
-
-    <div class="legend">
-        <span class="pink">● Drama 45%</span>
-        <span class="yellow">● Romance 40%</span>
-        <span class="green">● Mystery 15%</span>
-        <span class="purple">● </span>
-    </div>
-</section>
-
 
 <section class="reviews-section">
     <h2>Reviews</h2>
@@ -173,55 +148,78 @@
         <button>Following Only</button>
     </div>
 
+    <div class="review_inputbox">
+        <div class="review2">
+            <div class="profile-circle">AP</div>
+            <span class="username">@angelpriya</span>
 
-    <div class="review-box">
-        <div class="avatar">AP</div>
-        <div class="review-input-area">
-            <p class="username">@angelpriya</p>
-
-
-            <div class="rating-buttons">
-                <button>Drama</button>
-                <button class="timepass">Romance</button>
-                <button>Mystery</button>
-                <button>Empowering</button>
+            <div class="rating_options">
+                <button class="rateing-btn">Drama</button>
+                <button class="rateing-btn active">Romance</button>
+                <button class="rateing-btn">Mystery</button>
+                <button class="rateing-btn">Empowering</button>
             </div>
+        </div>
 
-
-            <textarea placeholder="Write your review here..."></textarea>
-
-
-            <button class="post-btn">Post</button>
+        <textarea id="reviewText" maxlength="1000" placeholder="Write your review here..."></textarea>
+        <div class="review_footer">
+            <span id="charCount">0/1000</span>
+            <button class="post_btn" onclick="addReview()">Post</button>
         </div>
     </div>
 
-
-    <div class="review-item">
-        <div class="avatar small">M</div>
-        <div class="review-content">
-            <h4>Mantavya <span>• 9 hrs ago</span></h4>
-            <p>When the movie is so bad that you reconsider your life decisions...</p>
-            <div class="review-actions">
-                ❤️ 13 &nbsp; 💬 3
+    <div id="reviewsList" class="reviews-cont">
+        <div class="review-item">
+            <div class="avatar small">M</div>
+            <div class="review-content">
+                <h4>Mantavya <span>• 9 hrs ago</span></h4>
+                <p>When the movie is so bad that you reconsider your life decisions...</p>
+                <div class="review-actions">
+                    ❤️ 13 &nbsp; 💬 3
+                </div>
             </div>
+            <span class="tag pink">Drama</span>
         </div>
-        <span class="tag pink">Drama</span>
-    </div>
 
-
-    <div class="review-item">
-        <div class="avatar small">A</div>
-        <div class="review-content">
-            <h4>AJAadi <span>• 8 hrs ago</span></h4>
-            <p>Better than expected, same template but with a better story setup...</p>
-            <div class="review-actions">
-                ❤️ 4 &nbsp; 💬 1
+        <div class="review-item">
+            <div class="avatar small">A</div>
+            <div class="review-content">
+                <h4>AJAadi <span>• 8 hrs ago</span></h4>
+                <p>Better than expected, same template but with a better story setup...</p>
+                <div class="review-actions">
+                    ❤️ 4 &nbsp; 💬 1
+                </div>
             </div>
+            <span class="tag yellow">Romance</span>
         </div>
-        <span class="tag yellow">Romance</span>
     </div>
 </section>
 
+<script>
+    function scrollLeft(id) {
+        const el = document.getElementById(id);
+        if (el) el.scrollBy({ left: -300, behavior: 'smooth' });
+    }
+
+    function scrollRight(id) {
+        const el = document.getElementById(id);
+        if (el) el.scrollBy({ left: 300, behavior: 'smooth' });
+    }
+
+    function addReview() {
+        const text = document.getElementById('reviewText').value.trim();
+        if (!text) return;
+        alert('Review posted (demo only)');
+    }
+
+    const reviewText = document.getElementById('reviewText');
+    const charCount = document.getElementById('charCount');
+    if (reviewText && charCount) {
+        reviewText.addEventListener('input', () => {
+            charCount.textContent = reviewText.value.length + '/1000';
+        });
+    }
+</script>
 
 </body>
 </html>

@@ -3,56 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We Bury the Dead</title>
+    <title>We Bury the Dead - CultStory</title>
     <link rel="stylesheet" href="kkp.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <nav>
-        <img class="logo_img" src="logo (1).png">
 
+<!-- NAVBAR -->
+<nav class="nav">
+    <img src="logo (1).png" class="logo" alt="CultStory logo">
+    <div class="right">
+        <a href="index.html" class="nav_item"><img src="explore_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+        <a href="cultStory.html" class="nav_item"><img src="event_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+        <a href="clubs_home.html" class="nav_item"><img src="groups_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+        <a class="nav_item"><img src="notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+        <a class="nav_item"><img src="search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt=""></a>
+        <a href="login.html" class="profile"></a>
+    </div>
+</nav>
 
-        <div class="right_column">
+<!-- HERO / MAIN -->
+<section class="main">
+    <img class="main-bg" src="https://i0.wp.com/thefutureoftheforce.com/wp-content/uploads/2025/11/We-Bury-The-Dead-Header-FUTURE-OF-THE-FORCE.jpg?fit=1920%2C1080&ssl=1" alt="We Bury the Dead background">
 
+    <div class="main_part"></div>
 
-            <a href="index.html" class="nav-items">
-                <img src="explore_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg">
-            </a>
+    <div class="main_content">
+        <img class="poster" src="MV5BMTIzYTU5ZjUtODc2ZC00NWQ0LWI5MWItNGRiMDRjY2VmYmNlXkEyXkFqcGc@._V1_.jpg" alt="We Bury the Dead poster">
 
-
-            <a href="cultStory.html" class="nav-items  explore active">
-                <img src="event_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg">
-            </a>
-
-
-            <a href="clubs_home.html" class="nav-items">
-                <img src="groups_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg">
-            </a>
-
-
-            <a href="#" class="nav-items ">
-                <img src="notifications_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg">
-            </a>
-
-
-            <a href="#" class="nav-items">
-                <img src="search_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg">
-            </a>
-
-
-            <a href="login.html" class="nav-items profile"></a>
-
-
-        </div>
-    </nav>
-    <section class="hero">
-    <div class="hero-left">
-        
-
-
-        <div class="movie-info">
+        <div class="main_info">
             <h1>We Bury the Dead</h1>
-            <p class="meta">Movie • 2026 • 1h 35m</p>
+            <p class="sub">Movie • 2026 • 1h 35m</p>
 
+            <div class="main_buttons">
+                <button class="btn purple">Mark as Watched</button>
+                <button class="btn light">Add to Collection</button>
+            </div>
 
             <div class="meta-grid">
                 <div><strong>Directed By:</strong> Zak Hilditch</div>
@@ -77,10 +63,12 @@
     </div>
 </section>
 
+<!-- PAGE CONTENT -->
+<div class="page">
 
-<section class="overview">
+    <!-- OVERVIEW -->
     <h2>Overview</h2>
-    <p>
+    <p class="overview">
         Ava Newman, a desperate woman, searches for her husband in the aftermath of a
         catastrophic military experiment. Hoping to find him alive, Ava joins a "body
         retrieval unit", but her search takes a chilling turn when the corpses she's
@@ -93,73 +81,60 @@
         <span>Action</span>
         <span>Survival</span>
     </div>
-</section>
 
-
-<hr class="divider">
-
-
-<section class="cast-section">
+    <!-- CAST -->
     <h2>Cast</h2>
-
-
-    <div class="cast-list">
-    <div class="cast-item">
-        <p>Daisy Ridley<br><small>Ava</small></p>
+    <div class="slider-container">
+        <div class="cast-slider" id="castSlider">
+            <div class="cast_card">
+                <h4>Daisy Ridley</h4>
+                <p>Ava</p>
+            </div>
+            <div class="cast_card">
+                <h4>Mark Coles Smith</h4>
+                <p>Riley</p>
+            </div>
+            <div class="cast_card">
+                <h4>Brenton Thwaites</h4>
+                <p>Clay</p>
+            </div>
+            <div class="cast_card">
+                <h4>Matt Whelan</h4>
+                <p>Mitch</p>
+            </div>
+        </div>
     </div>
 
-
-    <div class="cast-item">
-        <p>Mark Coles Smith<br><small>Riley</small></p>
+    <!-- CREW -->
+    <h2>Crew</h2>
+    <div class="slider-container">
+        <div class="cast-slider">
+            <div class="cast_card">
+                <h4>Zak Hilditch</h4>
+                <p>Director</p>
+            </div>
+        </div>
     </div>
 
+    <hr>
 
-    <div class="cast-item">
-        <p>Brenton Thwaites<br><small>Clay</small></p>
+    <!-- CULTSTORY METER -->
+    <h2>CultStory Meter</h2>
+    <div class="cultstory_meter">
+        <canvas id="cultstoryMeter"></canvas>
+        <div class="meter_center1">
+            <h1>63%</h1>
+            <p>36/57 Votes</p>
+        </div>
     </div>
 
-
-    <div class="cast-item">
-        <p>Matt Whelan<br><small>Mitch</small></p>
+    <div class="meter_box">
+        <span><span class="dot red"></span> Skip 63%</span>
+        <span><span class="dot yellow"></span> Timepass 23%</span>
+        <span><span class="dot green"></span> Go for it 11%</span>
+        <span><span class="dot purple"></span> Perfection 4%</span>
     </div>
 </div>
-
-
-</section>
-
-
-<section class="crew-section">
-    <h2>Crew</h2>
-
-
-    <div class="cast-list">
-        <div class="cast-card"><p>Zak Hilditch<br><small>Director</small></p></div>
-    </div>
-</section>
-
-
-<hr class="divider">
-
-
-<section class="meter-section">
-    <h2>Cult Meter</h2>
-
-
-    <div class="meter-visual">
-        
-        <h1>63%</h1>
-        <p>36/57 Votes</p>
-    </div>
-
-
-    <div class="legend">
-        <span class="pink">● Skip 63%</span>
-        <span class="yellow">● Timepass 23%</span>
-        <span class="green">● Go for it 11%</span>
-        <span class="purple">● Perfection 4%</span>
-    </div>
-</section>
-
 
 <section class="reviews-section">
     <h2>Reviews</h2>
@@ -174,55 +149,78 @@
         <button>Following Only</button>
     </div>
 
+    <div class="review_inputbox">
+        <div class="review2">
+            <div class="profile-circle">AP</div>
+            <span class="username">@angelpriya</span>
 
-    <div class="review-box">
-        <div class="avatar">AP</div>
-        <div class="review-input-area">
-            <p class="username">@angelpriya</p>
-
-
-            <div class="rating-buttons">
-                <button>Skip</button>
-                <button class="timepass">Timepass</button>
-                <button>Go for it</button>
-                <button>Perfection</button>
+            <div class="rating_options">
+                <button class="rateing-btn">Skip</button>
+                <button class="rateing-btn active">Timepass</button>
+                <button class="rateing-btn">Go for it</button>
+                <button class="rateing-btn">Perfection</button>
             </div>
+        </div>
 
-
-            <textarea placeholder="Write your review here..."></textarea>
-
-
-            <button class="post-btn">Post</button>
+        <textarea id="reviewText" maxlength="1000" placeholder="Write your review here..."></textarea>
+        <div class="review_footer">
+            <span id="charCount">0/1000</span>
+            <button class="post_btn" onclick="addReview()">Post</button>
         </div>
     </div>
 
-
-    <div class="review-item">
-        <div class="avatar small">M</div>
-        <div class="review-content">
-            <h4>Mantavya <span>• 9 hrs ago</span></h4>
-            <p>When the movie is so bad that you reconsider your life decisions...</p>
-            <div class="review-actions">
-                ❤️ 13 &nbsp; 💬 3
+    <div id="reviewsList" class="reviews-cont">
+        <div class="review-item">
+            <div class="avatar small">M</div>
+            <div class="review-content">
+                <h4>Mantavya <span>• 9 hrs ago</span></h4>
+                <p>When the movie is so bad that you reconsider your life decisions...</p>
+                <div class="review-actions">
+                    ❤️ 13 &nbsp; 💬 3
+                </div>
             </div>
+            <span class="tag pink">Skip</span>
         </div>
-        <span class="tag pink">Skip</span>
-    </div>
 
-
-    <div class="review-item">
-        <div class="avatar small">A</div>
-        <div class="review-content">
-            <h4>AJAadi <span>• 8 hrs ago</span></h4>
-            <p>Better than expected, same template but with a better story setup...</p>
-            <div class="review-actions">
-                ❤️ 4 &nbsp; 💬 1
+        <div class="review-item">
+            <div class="avatar small">A</div>
+            <div class="review-content">
+                <h4>AJAadi <span>• 8 hrs ago</span></h4>
+                <p>Better than expected, same template but with a better story setup...</p>
+                <div class="review-actions">
+                    ❤️ 4 &nbsp; 💬 1
+                </div>
             </div>
+            <span class="tag yellow">Timepass</span>
         </div>
-        <span class="tag yellow">Timepass</span>
     </div>
 </section>
 
+<script>
+    function scrollLeft(id) {
+        const el = document.getElementById(id);
+        if (el) el.scrollBy({ left: -300, behavior: 'smooth' });
+    }
+
+    function scrollRight(id) {
+        const el = document.getElementById(id);
+        if (el) el.scrollBy({ left: 300, behavior: 'smooth' });
+    }
+
+    function addReview() {
+        const text = document.getElementById('reviewText').value.trim();
+        if (!text) return;
+        alert('Review posted (demo only)');
+    }
+
+    const reviewText = document.getElementById('reviewText');
+    const charCount = document.getElementById('charCount');
+    if (reviewText && charCount) {
+        reviewText.addEventListener('input', () => {
+            charCount.textContent = reviewText.value.length + '/1000';
+        });
+    }
+</script>
 
 </body>
 </html>
